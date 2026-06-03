@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "name": "Dark",
+    "author": "Joseph S. ('22)"
+  },
+
+  "visibility": "show",
+  "recommended": {
+    "timing": "always"
+  },
+
+  "styling": {
+    "base": "dark",
+
+    "accent": "#b38825"
+  }
+}

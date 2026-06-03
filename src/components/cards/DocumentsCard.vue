@@ -1,0 +1,41 @@
+<template>
+  <card>
+    <div class="classname">{{ className }}</div>
+    <div class="books">
+      <a v-for="doc in documents" :href="doc.link" target="_blank" :key="doc.title">{{ doc.title }}</a>
+    </div>
+  </card>
+</template>
+
+<script setup lang="ts">
+import Card from '@/components/Card.vue';
+const { className, documents } = defineProps<{ className: string; documents: { title: string; link: string }[] }>()
+</script>
+
+<style lang="sass" scoped>
+
+.classname
+  text-align: center
+  background-color: var(--accent)
+  color: var(--background)
+  font-size: 1.1em
+  font-weight: bold
+  line-height: 45px
+
+.books
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  align-items: center
+
+  a
+    margin-top: 5px
+    margin-bottom: 5px
+
+    width: 90%
+    text-align: center
+
+    text-decoration: none
+    color: var(--accent)
+
+</style>

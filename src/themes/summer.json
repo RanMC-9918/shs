@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "name": "Summer",
+    "author": "Joseph S. ('22)"
+  },
+
+  "visibility": "show",
+  "recommended": {
+    "timing": "season",
+    "message": "[Try] The Summer Theme 🏖️"
+  },
+
+  "seasonalDates": "05/15-09/15",
+
+  "styling": {
+    "base": "light",
+
+    "accent": "#49c3d1",
+
+    "header": {
+      "image": {
+        "full": "assets://header-images/beach-full.png",
+        "mobile": "assets://header-images/beach-mobile.png"
+      }
+    }
+  }
+}

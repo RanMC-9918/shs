@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "name": "Winter",
+    "author": "Joseph S. ('22)"
+  },
+
+  "visibility": "show",
+  "recommended": {
+    "timing": "season",
+    "message": "[Try] The Winter Theme ☕"
+  },
+
+  "seasonalDates": "12/15-03/15",
+
+  "styling": {
+    "base": "light",
+    "background": "#f2fcff",
+    "secondaryBackground": "white",
+    "accent": "#02647a",
+
+    "text": {
+      "primary": "var(--accent)",
+      "secondary": "var(--accent)",
+      "tertiary": "var(--accent)"
+    },
+
+    "particles": {
+      "images": [
+        "assets://particles/snowflake.png"
+      ],
+      "speed": 2,
+      "count": 60,
+      "size": 8,
+      "opacity": 0.7,
+      "windPower": 0.7
+    }
+  }
+}

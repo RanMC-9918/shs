@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "name": "Light",
+    "author": "Abhinav P. ('19)"
+  },
+
+  "visibility": "show",
+  "recommended": {
+    "timing": "always"
+  },
+
+  "styling": {
+    "base": "light",
+
+    "accent": "#1b5e20"
+  }
+}

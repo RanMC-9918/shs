@@ -1,0 +1,60 @@
+<template xmlns="http://www.w3.org/1999/html">
+  <timed-card startTime="March 8, 2026" endTime="April 1, 2026">
+    <div class="container">
+      <div class="title"></div>
+      <div class="message">
+        stevenson.space is completely student run, and we're looking for new maintainers!<br/>
+        <br/>
+        If you or someone you know has programming experience and would be a great fit, please apply!<br/><b>Due 03/31.</b><br/>
+        <br/>
+        - Joshua F. ('26)
+      </div>
+      <div class="chips">
+        <link-chip
+          href="https://forms.gle/TLCmQtrSUkpr7Njg6"
+          label="Apply Now"
+          :icon="faFileLines"
+          background="var(--accent)"
+          color="var(--iconCardsRegular)"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      </div>
+    </div>
+  </timed-card>
+</template>
+
+<script setup lang="ts">
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import TimedCard from './TimedCard.vue';
+import LinkChip from './LinkChip.vue';
+</script>
+
+<style lang="sass" scoped>
+a
+  color: var(--accent)
+
+.container
+  display: flex
+  align-items: center
+  text-decoration: none
+  justify-content: center
+  flex-direction: column
+  color: var(--primary)
+  padding: 20px
+  .link
+    color: var(--accent)
+  .message
+    font-size: .85em
+    padding-bottom: 10px
+    margin: 0 20px
+    line-height: 1.6em
+    text-align: center
+.chips
+  display: flex
+  gap: 10px
+  flex-wrap: wrap
+  justify-content: center
+  margin-bottom: 10px
+
+</style>

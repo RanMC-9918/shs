@@ -1,0 +1,17 @@
+name: Run Cloudflare deploy webhook
+
+on:
+  schedule:
+    - cron: "01 01 * * *"
+  workflow_dispatch:
+  
+jobs:
+  call-cloudflare-deploy-webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        env:
+          URL: ${{ secrets.CLOUDFLARE_DEPLOY_WEBOOK_URL }}
+        run: |
+          curl -X POST "$URL"
+    
